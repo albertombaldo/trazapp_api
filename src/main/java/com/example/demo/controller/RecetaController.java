@@ -37,7 +37,7 @@ public class RecetaController {
 	}
 	//localhost:8080/trazapp/receta/arepa
 	@GetMapping("/{nombre}")
-	public List<Receta> getReceta(@PathVariable String nombre) {
+	public List<Receta> getRecetaPorNombre(@PathVariable String nombre) {
 		return rs.getRecetasPorNombre(nombre);	
 	}
 	
