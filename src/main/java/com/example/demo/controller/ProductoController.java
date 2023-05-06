@@ -34,7 +34,12 @@ public class ProductoController {
 		return ps.getProducto(id);
 	}
 	@GetMapping("/{nombre}")
-	public List<Producto> getProductoPorNombre(@PathVariable String nombre) {
+	public List<Producto> getProductosPorNombre(@PathVariable String nombre) {
+		return ps.getProductosPorNombre(nombre);
+	}
+
+	@GetMapping("/nombre/{nombre}")
+	public Producto getProductoPorNombre(@PathVariable String nombre) {
 		return ps.getProductoPorNombre(nombre);
 	}
 	

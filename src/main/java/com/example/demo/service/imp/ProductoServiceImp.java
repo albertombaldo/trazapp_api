@@ -49,10 +49,15 @@ public class ProductoServiceImp implements ProductoService{
 	}
 
 	@Override
-	public List<Producto> getProductoPorNombre(String nombre) {
+	public List<Producto> getProductosPorNombre(String nombre) {
+		return pr.getProductosPorNombre(nombre);
+	}
+
+	@Override
+	public Producto getProductoPorNombre(String nombre) {
 		return pr.getProductoPorNombre(nombre);
 	}
-	
+
 	@Override
 	public List<Producto> getProductoPorTipo(String tipo) {
 		return pr.getProductoPorTipo(tipo);
