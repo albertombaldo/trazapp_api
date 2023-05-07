@@ -1,59 +1,6 @@
-2023-05-03 07:37:02.445  WARN 15472 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8h56m11s461ms554µs400ns).
-2023-05-03 08:37:48.092  INFO 15472 --- [RMI TCP Connection(1143)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2023-05-03 08:37:48.133  INFO 15472 --- [RMI TCP Connection(1143)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-05-03 08:37:48.139  INFO 15472 --- [RMI TCP Connection(1143)-127.0.0.1] o.a.c.c.C.[.[localhost].[/trazapp]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-05-03 08:37:48.164  INFO 15472 --- [RMI TCP Connection(1143)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-05-03 08:37:48.180  INFO 15472 --- [RMI TCP Connection(1143)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-05-03 08:37:48.185  INFO 15472 --- [RMI TCP Connection(1143)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-05-03 08:42:55.535  INFO 30316 --- [restartedMain] com.example.demo.TrazAppApplication      : Starting TrazAppApplication using Java 17.0.6 on DESKTOP-8GTQLAV with PID 30316 (C:\Users\Usuario\eclipse-workspace\trazapp_api\target\classes started by Usuario in C:\Users\Usuario\eclipse-workspace\trazapp_api)
-2023-05-03 08:42:55.536  INFO 30316 --- [restartedMain] com.example.demo.TrazAppApplication      : No active profile set, falling back to 1 default profile: "default"
-2023-05-03 08:42:55.569  INFO 30316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-05-03 08:42:55.570  INFO 30316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-05-03 08:42:56.113  INFO 30316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-05-03 08:42:56.168  INFO 30316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 10 JPA repository interfaces.
-2023-05-03 08:42:56.564  INFO 30316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-05-03 08:42:56.572  INFO 30316 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-05-03 08:42:56.572  INFO 30316 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
-2023-05-03 08:42:56.627  INFO 30316 --- [restartedMain] o.a.c.c.C.[.[localhost].[/trazapp]       : Initializing Spring embedded WebApplicationContext
-2023-05-03 08:42:56.627  INFO 30316 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1057 ms
-2023-05-03 08:42:56.755  INFO 30316 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-05-03 08:42:56.798  INFO 30316 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
-2023-05-03 08:42:56.923  INFO 30316 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-05-03 08:42:56.996  INFO 30316 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-05-03 08:42:57.049  INFO 30316 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-05-03 08:42:57.072  INFO 30316 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
-2023-05-03 08:42:57.576  INFO 30316 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-05-03 08:42:57.582  INFO 30316 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-05-03 08:42:57.956  WARN 30316 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-05-03 08:42:58.161  INFO 30316 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-05-03 08:42:58.191  INFO 30316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/trazapp'
-2023-05-03 08:42:58.199  INFO 30316 --- [restartedMain] com.example.demo.TrazAppApplication      : Started TrazAppApplication in 2.926 seconds (JVM running for 3.672)
-2023-05-03 08:43:05.621  INFO 30316 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/trazapp]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-05-03 08:43:05.621  INFO 30316 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-05-03 08:43:05.622  INFO 30316 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-05-04 08:15:57.257  INFO 20636 --- [restartedMain] com.example.demo.TrazAppApplication      : Starting TrazAppApplication using Java 17.0.6 on lttramba with PID 20636 (C:\Users\tramba\trazapp_api\target\classes started by tramba in C:\Users\tramba\trazapp_api)
-2023-05-04 08:15:57.260  INFO 20636 --- [restartedMain] com.example.demo.TrazAppApplication      : No active profile set, falling back to 1 default profile: "default"
-2023-05-04 08:15:57.361  INFO 20636 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-05-04 08:15:57.361  INFO 20636 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-05-04 08:15:58.213  INFO 20636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-05-04 08:15:58.349  INFO 20636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109 ms. Found 10 JPA repository interfaces.
-2023-05-04 08:15:59.454  INFO 20636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-05-04 08:15:59.482  INFO 20636 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-05-04 08:15:59.483  INFO 20636 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
-2023-05-04 08:15:59.647  INFO 20636 --- [restartedMain] o.a.c.c.C.[.[localhost].[/trazapp]       : Initializing Spring embedded WebApplicationContext
-2023-05-04 08:15:59.648  INFO 20636 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2285 ms
-2023-05-04 08:16:00.375  INFO 20636 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-05-04 08:16:00.529  INFO 20636 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
-2023-05-04 08:16:00.842  INFO 20636 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-05-04 08:16:01.023  INFO 20636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-05-04 08:16:01.114  INFO 20636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-05-04 08:16:01.168  INFO 20636 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
-2023-05-04 08:16:02.178  INFO 20636 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-05-04 08:16:02.188  INFO 20636 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-05-04 08:16:03.455  WARN 20636 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-05-04 08:16:04.510  INFO 20636 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-05-04 08:16:04.625  INFO 20636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/trazapp'
-2023-05-04 08:16:04.659  INFO 20636 --- [restartedMain] com.example.demo.TrazAppApplication      : Started TrazAppApplication in 8.304 seconds (JVM running for 9.164)
-2023-05-04 08:16:21.115  INFO 20636 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/trazapp]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-05-04 08:16:21.116  INFO 20636 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-05-04 08:16:21.117  INFO 20636 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-05-07 10:04:11.930  WARN 22472 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13h11m50s315ms556µs600ns).
+2023-05-07 11:36:21.553  WARN 22472 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type Long is not present]
+2023-05-07 11:36:24.717  WARN 22472 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type Long is not present]
+2023-05-07 11:39:12.445  INFO 22472 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-07 11:39:12.449  INFO 22472 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-07 11:39:12.452  INFO 22472 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

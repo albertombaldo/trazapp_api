@@ -17,4 +17,7 @@ public interface RecetaRepo extends JpaRepository<Receta,Long>{
 	
 	@Query(nativeQuery = true, value="select * from receta where nombre like %:nombre%")
 	public List<Receta> getRecetasPorNombre(@Param("nombre") String nombre);
+
+	@Query(nativeQuery = true, value="select * from receta where nombre like %:nombre%")
+	public Receta getRecetaPorNombre(@Param("nombre") String nombre);
 }

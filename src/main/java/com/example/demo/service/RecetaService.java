@@ -11,5 +11,7 @@ public interface RecetaService {
 	public List<Receta> getAllRecetas();
 	public List<Receta> recetasQueConsumenUnaMP(Long idMP);
 	public List<Receta> getRecetasPorNombre(String nombre);
+	public Receta getRecetaPorNombre(String nombre);
+
 	public Receta saveOrUpdateReceta(Receta r);
 }

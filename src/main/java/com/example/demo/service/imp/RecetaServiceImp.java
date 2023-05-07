@@ -48,4 +48,9 @@ public class RecetaServiceImp implements RecetaService{
 	public List<Receta> getRecetasPorNombre(String nombre) {
 		return rr.getRecetasPorNombre(nombre);
 	}
+
+	@Override
+	public Receta getRecetaPorNombre(String nombre) {
+		return rr.getRecetaPorNombre(nombre);
+	}
 }
