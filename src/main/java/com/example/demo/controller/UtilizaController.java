@@ -23,8 +23,12 @@ public class UtilizaController {
 
     //localhost:8080/trazapp/uso?id=2
 	@GetMapping
-	public List<Utiliza> getUsos(@RequestParam Long id) {
-		return us.obtenerTodosUsos();	
+	public Utiliza getUsos(@RequestParam Long id) {
+		return us.getUso(id);
+	}
+	@GetMapping("/receta")
+	public List<Utiliza> usosDeUnaReceta(@RequestParam Long id) {
+		return us.usosDeUnaReceta(id);
 	}
 
     @PostMapping

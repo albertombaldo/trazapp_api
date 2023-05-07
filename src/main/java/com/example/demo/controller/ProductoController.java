@@ -57,6 +57,11 @@ public class ProductoController {
 	public List<Receta> getRecetasQueUsanProducto(@PathVariable Long id) {
 		return rs.recetasQueConsumenUnaMP(id);
 	}
+
+	@GetMapping("/receta")
+	public List<Producto> getProductosQueSeUsanEnUnaReceta(@RequestParam Long id) {
+		return ps.productosQueConsumeUnaReceta(id);
+	}
 	
 	@PostMapping
 	public ResponseEntity<?> altaProducto(@RequestBody Producto p){

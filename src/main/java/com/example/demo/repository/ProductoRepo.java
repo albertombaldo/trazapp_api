@@ -12,7 +12,7 @@ import com.example.demo.entity.Producto;
 @Repository
 public interface ProductoRepo extends JpaRepository<Producto, Long>{
 
-	@Query(nativeQuery = true, value="select * from producto where id_producto in (select id_producto from consume where id_receta = :idReceta)")
+	@Query(nativeQuery = true, value="select * from producto where id_producto in (select id_producto from utiliza where id_receta = :idReceta)")
 	public List<Producto> productosQueConsumeUnaReceta(@Param("idReceta")Long idReceta);
 	
 	@Query(nativeQuery = true, value="select * from producto where nombre like %:nombre%")

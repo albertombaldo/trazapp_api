@@ -26,8 +26,8 @@ public class Receta implements Serializable{
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id_receta;
 	private String nombre;
-	@OneToMany(mappedBy = "receta")
-    @JsonIgnoreProperties(value = {"receta"}, allowSetters = true)
-	private List<Utiliza> materias_primas; 
+//	@OneToMany(mappedBy = "receta")
+//    @JsonIgnoreProperties(value = {"receta"}, allowSetters = true)
+//	private List<Utiliza> materias_primas;
 
 }

@@ -53,9 +53,9 @@ public class RecetaController {
 	@DeleteMapping
 	public ResponseEntity<?> deleteReceta(@RequestParam Long id){
 		Receta r = rs.getReceta(id);
-		for(Utiliza c : r.getMaterias_primas()) {
-			us.deleteUso(c);
-		}
+//		for(Utiliza c : r.getMaterias_primas()) {
+//			us.deleteUso(c);
+//		}
 		rs.deleteReceta(id);
 		return new ResponseEntity("Receta eliminada correctamente", HttpStatus.OK);
 	}
@@ -93,12 +93,12 @@ public class RecetaController {
 	public ResponseEntity<?> altaReceta(@RequestBody Receta r) {
 		Receta alta = rs.saveOrUpdateReceta(r);
 		List<Utiliza> consumos = new ArrayList();
-		for(Utiliza c : r.getMaterias_primas()) {
-			c.setReceta(alta);
-			consumos.add(c);
-			us.saveOrUpdateUso(c);
-		}
-		alta.setMaterias_primas(consumos);
+//		for(Utiliza c : r.getMaterias_primas()) {
+//			c.setReceta(alta);
+//			consumos.add(c);
+//			us.saveOrUpdateUso(c);
+//		}
+//		alta.setMaterias_primas(consumos);
 		rs.saveOrUpdateReceta(alta);
 		return new ResponseEntity("Receta dada de alta correctamente", HttpStatus.OK);
 	}

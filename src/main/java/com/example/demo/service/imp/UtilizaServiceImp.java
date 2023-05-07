@@ -16,22 +16,31 @@ import com.example.demo.service.UtilizaService;
 public class UtilizaServiceImp implements UtilizaService{
 
 	@Autowired
-	UtilizaRepo cr;
-	
-	
+	UtilizaRepo ur;
+
 	@Override
 	public Utiliza saveOrUpdateUso(Utiliza c) {
-		return cr.save(c);
+		return ur.save(c);
+	}
+
+	@Override
+	public Utiliza getUso(Long id) {
+		return ur.findById(id).orElse(null);
 	}
 
 	@Override
 	public void deleteUso(Utiliza u) {
-		cr.delete(u);
+		ur.delete(u);
 	}
 
 	@Override
 	public List<Utiliza> obtenerTodosUsos() {
-		return cr.findAll();
+		return ur.findAll();
+	}
+
+	@Override
+	public List<Utiliza> usosDeUnaReceta(Long id_receta) {
+		return ur.usosDeUnaReceta(id_receta);
 	}
 
 }
