@@ -23,9 +23,10 @@ public class Produccion implements Serializable{
 	@Id
 	private String lote_produccion;
 	@ManyToOne
-	@JoinColumn(name = "id_producto_final", referencedColumnName = "id_producto_final")
+	@JoinColumn(name = "producto_final", referencedColumnName = "id_producto_final")
 	private ProductoFinal producto_final;
 	private Date fecha_produccion;
 	private Date fecha_caducidad;
 	private Long unidades;
+	private Long stock;
 }
