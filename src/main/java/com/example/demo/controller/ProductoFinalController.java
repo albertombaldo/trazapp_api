@@ -22,7 +22,7 @@ public class ProductoFinalController {
 		return pfs.getProductoFinal(id);
 	}
 
-	@GetMapping("/nombre/{nombre}")
+	@GetMapping("/{nombre}")
 	public ProductoFinal getProductoFinalPorNombre(@PathVariable String nombre){
 		return pfs.getProductoFinalPorNombre(nombre);
 	}

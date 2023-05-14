@@ -207,3 +207,8 @@
 2023-05-14 21:54:54.990  INFO 36196 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2023-05-14 21:54:55.468  WARN 36196 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2023-05-14 21:54:55.717  INFO 36196 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-14 21:54:55.739  INFO 36196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/trazapp'
+2023-05-14 21:54:55.747  INFO 36196 --- [restartedMain] com.example.demo.TrazAppApplication      : Started TrazAppApplication in 3.397 seconds (JVM running for 3.817)
+2023-05-14 21:58:27.507  INFO 36196 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/trazapp]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-14 21:58:27.508  INFO 36196 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-14 21:58:27.508  INFO 36196 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
