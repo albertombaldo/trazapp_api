@@ -25,7 +25,7 @@ insert into suministra (id_suministro, albaran, cantidad_recepcionada, cantidad_
 insert into receta values (0, "Baguette"), (0, "Tortilla de trigo"), (0, "Tortilla de trigo integral"), (0, "Arepa");
 
 insert into utiliza (id_uso, cantidad_mp, id_producto, id_receta) values 
-		    (0, 585.0, 2, 1), (0, 390.0, 1, 1), (0, 10.0, 5, 1), (0, 5.0, 6, 1),
+		    (0, 595.0, 2, 1), (0, 390.0, 1, 1), (0, 10.0, 5, 1), (0, 5.0, 6, 1),
 		    (0, 585.5, 2, 2), (0, 390.0, 1, 2), (0, 10.0, 5, 2), (0, 0.5, 9, 2), (0, 10.0, 7, 2),
 		    (0, 540.0, 3, 3), (0, 435.5, 1, 3), (0, 10.0, 5, 3), (0, 0.5, 9, 3), (0, 10.0, 7, 3),
  		    (0, 654.0, 4, 4), (0, 325.5, 1, 4), (0, 10.0, 5, 4), (0, 0.5, 9, 4), (0, 10.0, 8, 4);
