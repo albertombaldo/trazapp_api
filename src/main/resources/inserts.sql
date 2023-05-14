@@ -30,7 +30,7 @@ insert into utiliza (id_uso, cantidad_mp, id_producto, id_receta) values
 		    (0, 540.0, 3, 3), (0, 435.5, 1, 3), (0, 10.0, 5, 3), (0, 0.5, 9, 3), (0, 10.0, 7, 3),
  		    (0, 654.0, 4, 4), (0, 325.5, 1, 4), (0, 10.0, 5, 4), (0, 0.5, 9, 4), (0, 10.0, 8, 4);
 
-insert into producto_final values (0, "Baguette 400g"), (0, "Fajitas naturales"), (0, "Pan de pita integral"), (0, "Arepa venezolana");
+insert into producto_final values (0, "Baguette", 0.3, 1, 12), (0, "Fajitas naturales", 0.07, 8, 12), (0, "Pan de pita integral", 0.08, 3, 6), (0, "Arepa venezolana", 0.1, 4, 8);
 
 insert into consume (id_consumo, cantidad, lote_produccion, id_suministro) values ();
 
