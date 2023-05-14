@@ -9,7 +9,7 @@ insert into proveedor (id_proveedor, nombre, nif, telefono, direccion) values (0
 
 insert into producto (id_producto, nombre , tipo) values (0, "Agua", "MP"), (0, "Harina de trigo", "MP"), (0, "Harina integral", "MP"), (0, "Harina de maiz", "MP"), 
 		     (0, "Sal fina", "MP"), (0, "Levadura química", "MP"), (0, "Aceite de girasol", "MP"), (0, "Mantequilla", "MP"), (0, "Propionato", "MP"),
-		     (0, "Caja 12UDS", "ENV"), (0, "Caja 24UDS", "ENV"), (0, "Caja Plástico", "ENV"), (0, "Rollo PET Tortillas", "ENV"), (0, "Rollo PET Barras", "ENV");
+		     (0, "Caja 12UDS", "CAJA"), (0, "Caja 24UDS", "CAJA"), (0, "Caja Plástico", "CAJA"), (0, "Rollo PET Tortillas", "ENV"), (0, "Rollo PET Barras", "ENV");
 
 insert into suministra (id_suministro, albaran, cantidad_recepcionada, cantidad_stock, fecha_recepcion, fecha_caducidad, lote_producto, id_producto, id_proveedor) values (0, "0000", "0000", "0000", "0000-00-00", "0000-00-00", "00000", 1, 7),
 		       (0, "126543H", "18000", "18000", "2023-03-09", "2023-06-09", "45678HB", 2, 1), (0, "126543H", "12500", "12500", "2023-03-09", "2023-05-09", "56778HI", 3, 1), 
@@ -30,7 +30,7 @@ insert into utiliza (id_uso, cantidad_mp, id_producto, id_receta) values
 		    (0, 540.0, 3, 3), (0, 435.5, 1, 3), (0, 10.0, 5, 3), (0, 0.5, 9, 3), (0, 10.0, 7, 3),
  		    (0, 654.0, 4, 4), (0, 325.5, 1, 4), (0, 10.0, 5, 4), (0, 0.5, 9, 4), (0, 10.0, 8, 4);
 
-insert into producto_final values (0, "Baguette", 0.3, 1, 12), (0, "Fajitas naturales", 0.07, 8, 12), (0, "Pan de pita integral", 0.08, 3, 6), (0, "Arepa venezolana", 0.1, 4, 8);
+insert into producto_final(id_producto_final, nombre, peso_por_unidad, unidades_por_paquete, paquetes_por_caja) values (0, "Baguette", 0.3, 1, 24), (0, "Fajitas naturales", 0.07, 8, 12), (0, "Pan de pita integral", 0.08, 3, 6), (0, "Arepa venezolana", 0.1, 4, 8);
 
 insert into consume (id_consumo, cantidad, lote_produccion, id_suministro) values ();
 
