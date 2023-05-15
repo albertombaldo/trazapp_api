@@ -28,7 +28,7 @@ public interface SuministraRepo extends JpaRepository<Suministra, Long>{
 	@Query(nativeQuery = true, value="update suministra set cantidad_stock = :cantidad where id_suministro = :suministro")
 	public void modificarStock(@Param("suministro") Long suministro, @Param("cantidad") float cantidad);
 
-	@Query(nativeQuery = true, value="select * from suministra where id_producto = :id_producto order by fecha_recepcion ASC")
+	@Query(nativeQuery = true, value="select * from suministra where id_producto = :id_producto and cantidad_stock > 0 order by fecha_recepcion ASC")
 	public List<Suministra> getSuministrosPorProductoYFechaAsc(@Param("id_producto") Long id_producto);
 
 }
