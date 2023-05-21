@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Data
-@Table(name="consume", uniqueConstraints = { @UniqueConstraint(columnNames = {"lote_produccion", "id_suministro"})})
+@Table(name="consume")
 @NoArgsConstructor
 @AllArgsConstructor
 public class Consume implements Serializable{
