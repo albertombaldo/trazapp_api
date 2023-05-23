@@ -40,7 +40,7 @@ public class ProduccionController {
 		return ps.getProduccionesPorFecha(fecha);
 	}
 	
-	@GetMapping("/{idProducto}")
+	@GetMapping("/id_producto/{idProducto}")
 	public List<Produccion> getProduccionesPorProducto(@PathVariable Long idProducto) {
 		return ps.getProduccionesPorProductoFinal(idProducto);
 	}

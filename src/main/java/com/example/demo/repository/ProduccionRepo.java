@@ -16,7 +16,7 @@ public interface ProduccionRepo extends JpaRepository<Produccion, Long>{
 	@Query(nativeQuery = true, value="select * from produccion where fecha_produccion = :fecha")
 	public List<Produccion> produccionesDeUnaFecha(@Param("fecha") Date fecha);
 	
-	@Query(nativeQuery = true, value="select * from produccion where id_producto_final = :idProd")
+	@Query(nativeQuery = true, value="select * from produccion where producto_final = :idProd")
 	public List<Produccion> produccionesDeUnProducto(@Param("idProd") Long idProd);
 	
 }
