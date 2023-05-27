@@ -21,7 +21,7 @@ import lombok.NoArgsConstructor;
 public class Produccion implements Serializable{
 
 	@Id
-	private String lote_produccion;
+	private Long lote_produccion;
 	@ManyToOne
 	@JoinColumn(name = "producto_final", referencedColumnName = "id_producto_final")
 	private ProductoFinal producto_final;
