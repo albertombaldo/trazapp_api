@@ -2,14 +2,7 @@ package com.example.demo.entity;
 
 import java.io.Serializable;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
-import javax.persistence.UniqueConstraint;
+import javax.persistence.*;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -26,11 +19,11 @@ public class Utiliza implements Serializable{
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id_uso;
 	
-	@ManyToOne
+	@ManyToOne(optional = false, cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "id_receta", referencedColumnName = "id_receta")	
 	private Receta receta;
 	
-	@ManyToOne
+	@ManyToOne(optional = false, cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "id_producto", referencedColumnName = "id_producto")	
 	private Producto producto;
 

@@ -21,11 +21,11 @@ public class Suministra implements Serializable{
 	private Date fecha_recepcion;
 	@Temporal(TemporalType.DATE)
 	private Date fecha_caducidad;
-	@ManyToOne(cascade = {CascadeType.ALL})
+	@ManyToOne(optional = false, cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "id_proveedor", referencedColumnName = "id_proveedor")
 	private Proveedor proveedor;
-	@ManyToOne(cascade = {CascadeType.ALL})
-    @JoinColumn(name = "id_producto", referencedColumnName = "id_producto")	
+	@ManyToOne(optional = false, cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	@JoinColumn(name = "id_producto", referencedColumnName = "id_producto")
 	private Producto producto;
 	private String albaran;
 	private float cantidad_recepcionada;

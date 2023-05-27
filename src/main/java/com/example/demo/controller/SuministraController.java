@@ -61,8 +61,8 @@ public class SuministraController {
 	
 	//"http://localhost:8080/trazapp/suministro/modificar_stock?id=4&cantidad=354
 	@PutMapping("/modificar_stock")
-	public ResponseEntity<?> modificarStock(@RequestParam Long id, @RequestParam float cantidad){
-		ss.actualizarStock(id, cantidad);
+	public ResponseEntity<?> modificarStock(@RequestBody Suministra s){
+		ss.actualizarStock(s.getId_suministro(), s.getCantidad_stock());
 		return new ResponseEntity("Stock modificado correctamente", HttpStatus.OK);
 	}
 	
