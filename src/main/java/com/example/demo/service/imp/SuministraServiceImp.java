@@ -57,5 +57,4 @@ public class SuministraServiceImp implements SuministraService{
 	public void actualizarStock(Long idSuministro, float cantidad) {
 		sr.modificarStock(idSuministro, cantidad);
 	}
-
 }
