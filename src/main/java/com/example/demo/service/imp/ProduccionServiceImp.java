@@ -37,6 +37,11 @@ public class ProduccionServiceImp implements ProduccionService{
 	}
 
 	@Override
+	public List<Produccion> produccionesDeUnProductoPorFechaAsc(Long idpf) {
+		return pr.produccionesDeUnProductoPorFechaAsc(idpf);
+	}
+
+	@Override
 	public void deleteProduccion(Long id) {
 		pr.deleteById(id);
 	}

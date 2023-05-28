@@ -11,6 +11,7 @@ public interface ProduccionService {
 	public List<Produccion> getAllProducciones();
 	public List<Produccion> getProduccionesPorFecha(Date fecha);
 	public List<Produccion> getProduccionesPorProductoFinal(Long idpf);
+	public List<Produccion> produccionesDeUnProductoPorFechaAsc(Long idpf);
 	public void deleteProduccion(Long id);
 	public Produccion saveOrUpdatePorduccion(Produccion p);
 	

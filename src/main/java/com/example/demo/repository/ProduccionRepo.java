@@ -18,5 +18,7 @@ public interface ProduccionRepo extends JpaRepository<Produccion, Long>{
 	
 	@Query(nativeQuery = true, value="select * from produccion where producto_final = :idProd")
 	public List<Produccion> produccionesDeUnProducto(@Param("idProd") Long idProd);
-	
+
+	@Query(nativeQuery = true, value="select * from produccion where producto_final = :idProd order by fecha_produccion ASC")
+	public List<Produccion> produccionesDeUnProductoPorFechaAsc(@Param("idProd") Long idProd);
 }

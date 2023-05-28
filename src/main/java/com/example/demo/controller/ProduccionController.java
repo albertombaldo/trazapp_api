@@ -44,7 +44,11 @@ public class ProduccionController {
 	public List<Produccion> getProduccionesPorProducto(@PathVariable Long idProducto) {
 		return ps.getProduccionesPorProductoFinal(idProducto);
 	}
-	
+
+	@GetMapping("/id_producto/{idProducto}/porfechaasc")
+	public List<Produccion> produccionesDeUnProductoPorFechaAsc(@PathVariable Long idProducto) {
+		return ps.produccionesDeUnProductoPorFechaAsc(idProducto);
+	}
 	
 	@PostMapping
 	public Produccion saveOrUpdateProduccion(@RequestBody Produccion c) {
