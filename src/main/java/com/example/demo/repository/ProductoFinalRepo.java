@@ -14,6 +14,6 @@ public interface ProductoFinalRepo extends JpaRepository<ProductoFinal, Long>{
     @Query(nativeQuery = true, value="select * from producto_final where nombre = :nombre")
     public ProductoFinal getProductoFinalPorNombre(@Param("nombre")String nombre);
 
-    @Query(nativeQuery = true, value="select * from producto_final where like = '%:nombre%'")
+    @Query(nativeQuery = true, value="select * from producto_final where nombre like %:nombre%")
     public List<ProductoFinal> getProductosFinalesPorNombre(@Param("nombre")String nombre);
 }
