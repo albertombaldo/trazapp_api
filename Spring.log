@@ -1222,3 +1222,66 @@ java.sql.SQLSyntaxErrorException: (conn=143) You have an error in your SQL synta
 2023-05-28 11:12:13.997  INFO 33032 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/trazapp]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-05-28 11:12:13.998  INFO 33032 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2023-05-28 11:12:13.999  INFO 33032 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-05-28 12:34:43.615  INFO 33032 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-28 12:34:43.618  INFO 33032 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-28 12:34:43.621  INFO 33032 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-28 12:34:47.341  INFO 34516 --- [restartedMain] com.example.demo.TrazAppApplication      : Starting TrazAppApplication using Java 11.0.16 on DESKTOP-8GTQLAV with PID 34516 (C:\Users\Usuario\eclipse-workspace\trazapp_api\target\classes started by Usuario in C:\Users\Usuario\eclipse-workspace\trazapp_api)
+2023-05-28 12:34:47.343  INFO 34516 --- [restartedMain] com.example.demo.TrazAppApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-05-28 12:34:47.394  INFO 34516 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-28 12:34:47.394  INFO 34516 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-28 12:34:47.866  INFO 34516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-28 12:34:47.938  INFO 34516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 10 JPA repository interfaces.
+2023-05-28 12:34:48.601  INFO 34516 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-28 12:34:48.610  INFO 34516 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-28 12:34:48.610  INFO 34516 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-05-28 12:34:48.670  INFO 34516 --- [restartedMain] o.a.c.c.C.[.[localhost].[/trazapp]       : Initializing Spring embedded WebApplicationContext
+2023-05-28 12:34:48.670  INFO 34516 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1275 ms
+2023-05-28 12:34:48.803  INFO 34516 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-28 12:34:48.843  INFO 34516 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-05-28 12:34:48.958  INFO 34516 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-05-28 12:34:49.028  INFO 34516 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-28 12:34:49.079  INFO 34516 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-28 12:34:49.102  INFO 34516 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2023-05-28 12:34:49.603  INFO 34516 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-28 12:34:49.609  INFO 34516 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-28 12:34:50.093  WARN 34516 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-28 12:34:50.326  INFO 34516 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-28 12:34:50.347  INFO 34516 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/trazapp'
+2023-05-28 12:34:50.355  INFO 34516 --- [restartedMain] com.example.demo.TrazAppApplication      : Started TrazAppApplication in 3.377 seconds (JVM running for 3.812)
+2023-05-28 12:34:52.676  INFO 34516 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/trazapp]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-28 12:34:52.677  INFO 34516 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-28 12:34:52.678  INFO 34516 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-05-28 12:34:52.698  INFO 34516 --- [http-nio-8080-exec-1] org.apache.tomcat.util.http.Parameters   : Invalid chunk starting at byte [0] and ending at byte [4] with a value of [=123] ignored
+ Note: further occurrences of Parameter errors will be logged at DEBUG level.
+2023-05-28 12:34:52.700  WARN 34516 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'albaran' for method parameter type String is not present]
+2023-05-28 12:37:17.647  WARN 34516 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'albaran' for method parameter type String is not present]
+2023-05-28 12:37:50.576  WARN 34516 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'albaran' for method parameter type String is not present]
+2023-05-28 12:38:29.411  INFO 34516 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-28 12:38:29.414  INFO 34516 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-28 12:38:29.417  INFO 34516 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-28 12:38:32.549  INFO 10636 --- [restartedMain] com.example.demo.TrazAppApplication      : Starting TrazAppApplication using Java 11.0.16 on DESKTOP-8GTQLAV with PID 10636 (C:\Users\Usuario\eclipse-workspace\trazapp_api\target\classes started by Usuario in C:\Users\Usuario\eclipse-workspace\trazapp_api)
+2023-05-28 12:38:32.550  INFO 10636 --- [restartedMain] com.example.demo.TrazAppApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-05-28 12:38:32.598  INFO 10636 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-28 12:38:32.598  INFO 10636 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-28 12:38:33.071  INFO 10636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-28 12:38:33.138  INFO 10636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 10 JPA repository interfaces.
+2023-05-28 12:38:33.743  INFO 10636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-28 12:38:33.752  INFO 10636 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-28 12:38:33.752  INFO 10636 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-05-28 12:38:33.812  INFO 10636 --- [restartedMain] o.a.c.c.C.[.[localhost].[/trazapp]       : Initializing Spring embedded WebApplicationContext
+2023-05-28 12:38:33.812  INFO 10636 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1214 ms
+2023-05-28 12:38:33.948  INFO 10636 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-28 12:38:33.985  INFO 10636 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-05-28 12:38:34.102  INFO 10636 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-05-28 12:38:34.174  INFO 10636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-28 12:38:34.228  INFO 10636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-28 12:38:34.252  INFO 10636 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2023-05-28 12:38:34.768  INFO 10636 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-28 12:38:34.774  INFO 10636 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-28 12:38:35.270  WARN 10636 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-28 12:38:35.533  INFO 10636 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-28 12:38:35.555  INFO 10636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/trazapp'
+2023-05-28 12:38:35.562  INFO 10636 --- [restartedMain] com.example.demo.TrazAppApplication      : Started TrazAppApplication in 3.355 seconds (JVM running for 3.772)
+2023-05-28 12:38:49.541  INFO 10636 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/trazapp]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-28 12:38:49.541  INFO 10636 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-28 12:38:49.542  INFO 10636 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

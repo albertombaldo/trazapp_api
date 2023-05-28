@@ -5,13 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.example.demo.entity.Envio;
 import com.example.demo.service.EnvioService;
@@ -41,6 +35,10 @@ public class EnvioController {
 	@GetMapping("/producto")
 	public List<Envio> getEnviosPorProducto(@RequestParam Long id) {
 		return es.getEnviosPorProducto(id);
+	}
+	@GetMapping("/albaran/{albaran}")
+	public List<Envio> getEnviosPorProducto(@PathVariable String albaran) {
+		return es.getEnviosPorAlbaran(albaran);
 	}
 	
 	@PostMapping

@@ -36,6 +36,11 @@ public class EnvioServiceImp implements EnvioService{
 	}
 
 	@Override
+	public List<Envio> getEnviosPorAlbaran(String albaran) {
+		return er.getEnviosPorAlbaran(albaran);
+	}
+
+	@Override
 	public void deleteEnvio(Long id) {
 		er.deleteById(id);
 	}

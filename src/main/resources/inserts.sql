@@ -38,7 +38,7 @@ insert into produccion (lote_produccion, fecha_produccion, fecha_caducidad, unid
 
 insert into cliente (id_cliente, nombre, nif, telefono, direccion) values (0, "Carrefour", "A12376453", "901754329", "C/ de los Almendros, 12"), (0, "ALDI", "A12376453", "949758741", "Av. de las Canteras, 211"), (0, "Alimentacion MariSol", "AR62376467", "928754334", "C/ del Mercurio, 51");
 
-insert into envio (id_envio, albaran, cantidad, fecha_envio, lote, id_cliente, id_producto_final) values (); 
+insert into envio (id_envio, albaran, cantidad, fecha_envio, lote, id_cliente, id_producto_final) values (0, "12345", 20, "2023-05-28", "1685209471", 1, 4);
 		       
 
 
