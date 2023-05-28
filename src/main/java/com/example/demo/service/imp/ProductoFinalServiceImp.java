@@ -26,6 +26,11 @@ public class ProductoFinalServiceImp implements ProductoFinalService{
 	}
 
 	@Override
+	public List<ProductoFinal> getProductosFinalesPorNombre(String nombre) {
+		return pfr.getProductosFinalesPorNombre(nombre);
+	}
+
+	@Override
 	public List<ProductoFinal> getAllProductoFinal() {
 		return pfr.findAll();
 	}

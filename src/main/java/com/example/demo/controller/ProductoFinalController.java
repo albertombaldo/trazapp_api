@@ -27,6 +27,11 @@ public class ProductoFinalController {
 		return pfs.getProductoFinalPorNombre(nombre);
 	}
 
+	@GetMapping("/nombre/{nombre}")
+	public List<ProductoFinal> getProductosFinalesPorNombre(@PathVariable String nombre){
+		return pfs.getProductosFinalesPorNombre(nombre);
+	}
+
 	@GetMapping("/")
 	public List<ProductoFinal> getAllProductoFinal() {
 		return pfs.getAllProductoFinal();
