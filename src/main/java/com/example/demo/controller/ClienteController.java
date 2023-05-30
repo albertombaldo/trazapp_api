@@ -52,9 +52,7 @@ public class ClienteController {
 	public Cliente updateCliente(@RequestBody Cliente c) {
 		return cs.saveOrUpdateCliente(c);
 	}
-	
-	//Poner mejor un campo de activo/no activo para mantener los albaranes de la tabla envío?????
-	//Comprobar que el cliente tiene pedidos y mostrar mensaje de que no se puede borrar del sistema por los pedidos??
+
 	@DeleteMapping
 	public ResponseEntity<?> deleteCliente(@RequestParam Long id){
 		cs.deleteCliente(id);
