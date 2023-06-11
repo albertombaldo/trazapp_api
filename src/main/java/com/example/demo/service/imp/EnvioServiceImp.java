@@ -31,8 +31,8 @@ public class EnvioServiceImp implements EnvioService{
 	}
 
 	@Override
-	public List<Envio> getEnviosPorProducto(Long idPF) {
-		return er.getEnviosPorProducto(idPF);
+	public List<Envio> getEnviosPorLoteProducto(String lote) {
+		return er.getEnviosPorProducto(lote);
 	}
 
 	@Override

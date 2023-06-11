@@ -33,8 +33,8 @@ public class EnvioController {
 	}
 	
 	@GetMapping("/producto")
-	public List<Envio> getEnviosPorProducto(@RequestParam Long id) {
-		return es.getEnviosPorProducto(id);
+	public List<Envio> getEnviosPorLoteProducto(@RequestParam String lote) {
+		return es.getEnviosPorLoteProducto(lote);
 	}
 	@GetMapping("/albaran/{albaran}")
 	public List<Envio> getEnviosPorProducto(@PathVariable String albaran) {

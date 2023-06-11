@@ -32,7 +32,7 @@ public class UtilizaController {
 	}
 
     @PostMapping
-	public ResponseEntity<?> altaReceta(@RequestBody Utiliza r) {
+	public ResponseEntity<?> altaUso(@RequestBody Utiliza r) {
 		Utiliza uso = us.saveOrUpdateUso(r);
 		return new ResponseEntity("Uso dado de alta correctamente", HttpStatus.OK);
 	}

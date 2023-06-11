@@ -15,8 +15,8 @@ public interface EnvioRepo extends JpaRepository<Envio, Long>{
 	@Query(nativeQuery = true, value="select * from envio where id_cliente = :idCliente")
 	public List<Envio> getEnviosPorCliente(@Param("idCliente")Long idCliente);
 	
-	@Query(nativeQuery = true, value="select * from envio where id_producto_final = :idProducto")
-	public List<Envio> getEnviosPorProducto(@Param("idProducto")Long idProducto);
+	@Query(nativeQuery = true, value="select * from envio where lote = :lote")
+	public List<Envio> getEnviosPorProducto(@Param("lote")String lote);
 
 	@Query(nativeQuery = true, value="select * from envio where albaran = :albaran")
 	public List<Envio> getEnviosPorAlbaran(@Param("albaran")String albaran);
